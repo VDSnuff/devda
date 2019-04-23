@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using devda;
@@ -9,9 +10,10 @@ using devda;
 namespace devda.Migrations
 {
     [DbContext(typeof(DevdaContext))]
-    partial class DevdaContextModelSnapshot : ModelSnapshot
+    [Migration("20190423210309_DayTimeForPost")]
+    partial class DayTimeForPost
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,8 +85,6 @@ namespace devda.Migrations
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Avatar");
 
                     b.Property<string>("Email");
 

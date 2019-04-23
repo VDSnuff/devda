@@ -8,6 +8,7 @@ namespace devda.model
         public int PostId { get; private set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public DateTime CreationDayTime { get; set; }
         public int BlogId { get; set; }
         public User User { get; set; }
         public Blog Blog { get; set; }

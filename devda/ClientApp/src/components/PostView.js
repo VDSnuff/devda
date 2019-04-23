@@ -20,7 +20,7 @@ export class PostView extends Component {
                 {posts.map(post =>
                     <div>
                         <h2>{post.Title}</h2>
-                        <p>{post.User}</p>
+                        <p> Author: <img alt="Avatar" src={require(`${post.User.Avatar}`)} height="25" width="25"/> {post.User.Name} {post.User.Surname}, {post.CreationDayTime}</p>
                         <p>{post.Content}</p>
                     </div>
                 )}

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using devda.model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace devda.Controllers
@@ -22,7 +23,7 @@ namespace devda.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            List<Post> posts = _context.Posts.Take(100).ToList();
+            List<Post> posts = _context.Posts.Include(u => u.User).Take(100).ToList();
             return JsonConvert.SerializeObject(posts);
         }
 

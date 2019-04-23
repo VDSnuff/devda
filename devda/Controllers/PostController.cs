@@ -26,8 +26,8 @@ namespace devda.Controllers
             return JsonConvert.SerializeObject(posts);
         }
 
-        // GET: Post/Details/5
-        public ActionResult Details(int id)
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
         {
             return View();
         }

@@ -6,7 +6,7 @@ export class Home extends Component {
 
     render() {
         return (
-            <div>
+            <div className="postList">
                 <h1>The greatest f* blog in the world</h1>
                 <p>Welcome to your new single-page application</p>
                 <PostView />

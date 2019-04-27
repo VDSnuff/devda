@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import '../css/custom.css'
 
 export class PostView extends Component {
     static displayName = PostView.name;
@@ -6,7 +7,7 @@ export class PostView extends Component {
     constructor(props) {
         super(props);
         this.state = { posts: [], loading: true };
-
+      
         fetch('api/post')
             .then(response => response.json())
             .then(data => {
@@ -18,10 +19,10 @@ export class PostView extends Component {
         return (
             <div>
                 {posts.map(post =>
-                    <div>
+                    <div className="post" key={post.PostId}>
                         <h2>{post.Title}</h2>
-                        <p> Author: <img alt="Avatar" src={require(`${post.User.Avatar}`)} height="25" width="25"/> {post.User.Name} {post.User.Surname}, {post.CreationDayTime}</p>
-                        <p>{post.Content}</p>
+                        <div className="authorBlock"><img alt="Avatar" src={post.User.Avatar} /> {post.User.Name} {post.User.Surname},<br /> {post.CreationDay}</div>
+                        <p className="postText">{post.Content}</p>
                     </div>
                 )}
             </div>

@@ -16,7 +16,7 @@ namespace devda.model
             set => creationDay = value;
         }
 
-        public DateTime lastUpdate;
+        private DateTime lastUpdate;
         public DateTime LastUpdate
         {
             get => lastUpdate;

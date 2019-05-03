@@ -19,10 +19,10 @@ export class PostView extends Component {
         return (
             <div>
                 {posts.map(post =>
-                    <div className="post" key={post.PostId}>
+                    <div className="post" key={post.postId}>
                         <h2>{post.Title}</h2>
-                        <div className="authorBlock"><img alt="Avatar" src={post.User.Avatar} /> {post.User.Name} {post.User.Surname},<br /> {post.CreationDay}</div>
-                        <p className="postText">{post.Content}</p>
+                        <div className="authorBlock"><img alt="Avatar" src={post.user.avatar} /> {post.user.name} {post.user.surname},<br /> {post.creationDay}</div>
+                        <p className="postText">{post.content}</p>
                     </div>
                 )}
             </div>

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "devda", "devda\devda.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "devda.model", "devda.model\devda.model.csproj", "{7F72137E-79C5-45C0-A997-BD4E9DFADAC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.IdentityServer", "Auth.IdentityServer\Auth.IdentityServer.csproj", "{C7DA3FA2-6E1D-485D-9B52-C4E702E44451}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7F72137E-79C5-45C0-A997-BD4E9DFADAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F72137E-79C5-45C0-A997-BD4E9DFADAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F72137E-79C5-45C0-A997-BD4E9DFADAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DA3FA2-6E1D-485D-9B52-C4E702E44451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DA3FA2-6E1D-485D-9B52-C4E702E44451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DA3FA2-6E1D-485D-9B52-C4E702E44451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DA3FA2-6E1D-485D-9B52-C4E702E44451}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
